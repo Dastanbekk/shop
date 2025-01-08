@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+      <div class="product-wrap block">
+        <header class="py-5">
+          <nav class="w-[90%] m-auto flex items-center justify-between">
+            <nav class="text-2xl">Logo</nav>
+            <nav class="flex items-center gap-6">
+              <a href="./index.html">Home</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+            </nav>
+            <nav class="flex items-center gap-10">
+              <i class="bx bx-search text-2xl cursor-pointer"></i>
+              <div class="user-section">
+                <i class="bx bx-user text-3xl user-icon"></i>
+                <span class="user-email hidden text-black">userExample</span>
+              </div>
+              <a href="./shop.html" class="relative">
+                <i class="bx bx-shopping-bag text-2xl cursor-pointer"></i>
+                <p
+                  class="counter bg-red-700 absolute w-[25px] h-[25px] rounded-full text-[12px] text-white flex items-center justify-center top-[-10px] right-[-14px]"
+                >
+                  0
+                </p>
+              </a>
+              <a href="./like.html">
+                <div class="icons">
+                  <i class="bx bx-heart text-3xl like-icon"></i>
+                  <span class="like-counter">0</span>
+                </div>
+              </a>
+            </nav>
+          </nav>
+        </header>
+        <section class="carts grid grid-cols-4 gap-6 w-[90%] m-auto"></section>
+      </div>
+      <div>
+        <div>
+          <!-- <form action="" class="flex h-[100vh] justify-center flex-col w-[50%] m-auto gap-[30px]">
+              <div class="flex flex-col">
+                <span>email</span>
+              </div>
+              <div class="flex flex-col">
+                <span>password</span>
+              </div>
+              <button id="login-btn" class="bg-[dodgerblue] py-3 text-white rounded-lg cursor-pointer">Submit</button>
+              <p id="error-msg" class="error-msg"></p>
+          </form> -->
+          <div class="modal hidden">
+            <div class="modal-content">
+              <h2>Tizimga kirish</h2>
+              <input type="text" type="email" id="email" placeholder="Email" class="border border-black px-5 rounded-lg py-3" required>
+              <input type="text" type="password" id="password" placeholder="Parol" class="border border-black px-5 rounded-lg py-3" required>
+              <button id="login-btn" class="bg-[dodgerblue] py-3 text-white rounded-lg cursor-pointer" >Kirish</button>
+              <p id="error-msg" class="error-msg"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>
